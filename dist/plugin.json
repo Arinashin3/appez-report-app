@@ -1,0 +1,67 @@
+{
+    "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json",
+    "type": "app",
+    "name": "Report",
+    "id": "appez-report-app",
+    "backend": true,
+    "executable": "gpx_report",
+    "info": {
+        "keywords": [
+            "app"
+        ],
+        "description": "",
+        "author": {
+            "name": "App ez"
+        },
+        "logos": {
+            "small": "img/logo.svg",
+            "large": "img/logo.svg"
+        },
+        "screenshots": [],
+        "version": "1.0.0",
+        "updated": "2025-04-28"
+    },
+    "includes": [
+        {
+            "type": "page",
+            "name": "Page One",
+            "path": "/a/appez-report-app/one",
+            "addToNav": true,
+            "defaultNav": true
+        },
+        {
+            "type": "page",
+            "name": "Page Two",
+            "path": "/a/appez-report-app/two",
+            "addToNav": true,
+            "defaultNav": false
+        },
+        {
+            "type": "page",
+            "name": "Page Three",
+            "path": "/a/appez-report-app/three",
+            "addToNav": true,
+            "defaultNav": false
+        },
+        {
+            "type": "page",
+            "name": "Page Four",
+            "path": "/a/appez-report-app/four",
+            "addToNav": true,
+            "defaultNav": false
+        },
+        {
+            "type": "page",
+            "icon": "cog",
+            "name": "Configuration",
+            "path": "/plugins/appez-report-app",
+            "role": "Admin",
+            "addToNav": true
+        }
+    ],
+    "dependencies": {
+        "grafanaDependency": ">=10.4.0",
+        "plugins": []
+    },
+    "buildMode": "development"
+}
